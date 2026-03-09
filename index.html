@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GitHub Issues Tracker</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+</head>
+
+<body class="bg-gray-200 flex justify-center items-center min-h-screen">
+
+<div class="bg-white p-8 rounded-xl shadow-lg w-96 text-center">
+
+      <img class="w-16 mx-auto mb-4"
+      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+
+      <h2 class="text-2xl font-bold mb-2">GitHub Issues Tracker</h2>
+      <p class="text-gray-500 mb-6">Sign in to manage your issues</p>
+
+      <div class="text-left">
+
+      <label class="font-semibold">Username</label>
+
+      <input id="username"
+      type="text"
+      placeholder="Enter Username"
+      class="input input-bordered w-full mt-1"/>
+
+      <p class="text-sm text-purple-600 mb-3">Default: admin</p>
+
+      <label class="font-semibold">Password</label>
+
+      <input id="password"
+      type="password"
+      placeholder="Enter Password"
+      class="input input-bordered w-full mt-1"/>
+
+      <p class="text-sm text-purple-600 mb-4">Default: admin123</p>
+
+      </div>
+
+      
+
+      <p id="message" class="mt-4 font-semibold"></p>
+
+</div>
+
+<script src="./script/login.js"></script>
+
+</body>
+</html>

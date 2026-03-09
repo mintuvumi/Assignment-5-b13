@@ -23,3 +23,19 @@ b.classList.add("bg-white")
 btn.classList.add("bg-purple-600","text-white")
 
 }
+
+
+async function loadIssues(){
+
+loader.classList.remove("hidden")
+
+const res=await fetch(API)
+const data=await res.json()
+
+issues=data.data
+
+displayIssues(issues)
+
+loader.classList.add("hidden")
+
+}

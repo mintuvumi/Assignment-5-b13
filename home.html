@@ -54,30 +54,85 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     Open
     </button>
 
-<button id="closedBtn"
-class="tabBtn bg-white border px-4 py-2 rounded-lg text-sm">
-Closed
-</button>
+    <button id="closedBtn"
+    class="tabBtn bg-white border px-4 py-2 rounded-lg text-sm">
+    Closed
+    </button>
+
+    </div>
+
+    <!-- LOADING -->
+
+    <div id="loader"
+            class="flex justify-center py-10 hidden">
+
+            <span class="loading loading-spinner loading-lg text-purple-600"></span>
+
+        </div>
+
+            <!-- ISSUE CARDS -->
+
+            <div id="issuesContainer"
+            class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+        </div>
 
 </div>
 
-<!-- LOADING -->
+<!-- MODAL -->
 
-<div id="loader"
-class="flex justify-center py-10 hidden">
+<div id="issueModal"
+    class="fixed inset-0 bg-black/40 flex items-center justify-center hidden">
 
-<span class="loading loading-spinner loading-lg text-purple-600"></span>
+    <div class="bg-white rounded-2xl w-[600px] p-8">
+
+        <h2 id="modalTitle"
+        class="text-3xl font-bold mb-4"></h2>
+
+        <div id="modalMeta"
+        class="flex items-center gap-3 text-sm text-gray-500 mb-5"></div>
+
+        <div id="modalLabels"
+        class="flex gap-3 mb-6"></div>
+
+        <p id="modalDesc"
+        class="text-gray-600 mb-6"></p>
+
+        <div class="bg-gray-100 rounded-xl p-5 flex justify-between mb-6">
+
+        <div>
+
+        <p class="text-gray-500 text-sm">Assignee:</p>
+        <p id="modalUser"
+        class="font-semibold"></p>
+
+    </div>
+
+    <div>
+
+    <p class="text-gray-500 text-sm">Priority:</p>
+
+    <span id="modalPriority"
+    class="bg-red-500 text-white text-xs px-3 py-1 rounded-full"></span>
+
+    </div>
+
+    </div>
+
+    <div class="flex justify-end">
+
+        <button onclick="closeModal()"
+        class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-lg">
+        Close
+        </button>
+
+    </div>
+
+    </div>
 
 </div>
 
-<!-- ISSUE CARDS -->
-
-<div id="issuesContainer"
-class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-
-</div>
-
-</div>
+<script src="./scriot/home.js"></script>
 
 
 </body>

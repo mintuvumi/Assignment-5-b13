@@ -49,7 +49,7 @@ const border=issue.status==="open"
 
 const icon = issue.status==="open"
 ? "./assets/open-status.png"
-: "./B13-A5-Github-Issue-Tracker/assets/Closed-Status.png"
+: "./assets/Closed-Status.png"
 
 const card=document.createElement("div")
 

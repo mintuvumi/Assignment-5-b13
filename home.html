@@ -38,6 +38,47 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       </div>
 </div>
 
+    <div class="max-w-7xl mx-auto p-6">
+
+<!-- FILTER BUTTONS -->
+
+<div class="flex gap-3 mb-6">
+
+    <button id="allBtn"
+    class="tabBtn bg-purple-600 text-white px-4 py-2 rounded-lg text-sm">
+    All
+    </button>
+
+    <button id="openBtn"
+    class="tabBtn bg-white border px-4 py-2 rounded-lg text-sm">
+    Open
+    </button>
+
+<button id="closedBtn"
+class="tabBtn bg-white border px-4 py-2 rounded-lg text-sm">
+Closed
+</button>
+
+</div>
+
+<!-- LOADING -->
+
+<div id="loader"
+class="flex justify-center py-10 hidden">
+
+<span class="loading loading-spinner loading-lg text-purple-600"></span>
+
+</div>
+
+<!-- ISSUE CARDS -->
+
+<div id="issuesContainer"
+class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+</div>
+
+</div>
+
 
 </body>
 </html>
